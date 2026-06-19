@@ -7,7 +7,7 @@ dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 
-const MONGODB_URI = process.env.DEV_URL!;
+const MONGODB_URI = process.env.MONGODB_URI!;
 
 if (!MONGODB_URI) {
   console.error("❌ MONGODB_URI not found in .env.local");

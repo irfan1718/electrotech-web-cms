@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.DEV_URL;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
-  throw new Error("Please define DEV_URL in .env.local");
+  throw new Error("Please define MONGODB_URI in .env.local");
 }
 
 interface MongooseCache {
